@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Quotes By The DecaSecond<</title>
+    <title>Quotes By The DecaSecond</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,17 +10,60 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Add this block right after <body> -->
+    <div class="neo-toggle-fixed">
+        <div class="neo-toggle-container">
+            <input class="neo-toggle-input" id="neo-toggle" type="checkbox" />
+            <label class="neo-toggle" for="neo-toggle">
+                <div class="neo-track">
+                    <div class="neo-background-layer"></div>
+                    <div class="neo-grid-layer"></div>
+                    <div class="neo-spectrum-analyzer">
+                        <div class="neo-spectrum-bar"></div>
+                        <div class="neo-spectrum-bar"></div>
+                        <div class="neo-spectrum-bar"></div>
+                        <div class="neo-spectrum-bar"></div>
+                        <div class="neo-spectrum-bar"></div>
+                    </div>
+                    <div class="neo-track-highlight"></div>
+                </div>
+                <div class="neo-thumb">
+                    <div class="neo-thumb-ring"></div>
+                    <div class="neo-thumb-core">
+                        <div class="neo-thumb-icon">
+                            <div class="neo-thumb-wave"></div>
+                            <div class="neo-thumb-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="neo-gesture-area"></div>
+                <div class="neo-interaction-feedback">
+                    <div class="neo-ripple"></div>
+                    <div class="neo-progress-arc"></div>
+                </div>
+                <div class="neo-status">
+                    <div class="neo-status-indicator">
+                        <div class="neo-status-dot"></div>
+                        <div class="neo-status-text"></div>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
 
     <main>
         <div class="container">
-            <h1 class="text-white text-center mt-2">Quotes By The DecaSecond</h1>
+            <h1 class="text-center mt-2">Quotes By The DecaSecond</h1>
+
             <div class="row">
                 <div class="col-12">
                     <div class="quote-card mx-auto mt-5" id="quote-card">
@@ -46,24 +89,27 @@
             </div>
         </div>
     </main>
-    
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-  <div id="copyToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        Quote copied!
-      </div>
-      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="copyToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Quote copied!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
-<div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
-  <div id="countdown-timer" class="bg-dark text-white rounded px-3 py-2" style="opacity:0.85; font-family: monospace;">
-    Next quote in <span id="countdown-value">10</span>s
-  </div>
-</div>
+    <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+        <div id="countdown-timer" class="bg-dark text-white rounded px-3 py-2"
+            style="opacity:0.85; font-family: monospace;">
+            Next quote in <span id="countdown-value">10</span>s
+        </div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

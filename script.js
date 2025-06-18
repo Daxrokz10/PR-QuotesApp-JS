@@ -52,3 +52,13 @@ document.getElementById('copy-btn').addEventListener('click', function() {
     });
 });
 
+// Light/Dark mode toggle
+const toggleInput = document.getElementById('neo-toggle');
+toggleInput.addEventListener('change', function() {
+    if (toggleInput.checked) {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+});
+
